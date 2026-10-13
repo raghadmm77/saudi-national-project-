@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d0a">
+
+  <title>SAUDI ARABIA | RAGHAD</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-content">
+
+      <div class="flag">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
+          alt="علم المملكة العربية السعودية"
+        >
+      </div>
+
+      <p class="eyebrow">المملكة العربية السعودية</p>
+
+      <h1>وطنٌ نفخر به</h1>
+
+      <p class="hero-description">
+        حبٌّ راسخ، ووفاءٌ دائم، ومسؤوليةٌ تجاه الوطن.
+      </p>
+
+      <div class="signature">RAGHAD</div>
+      <div class="signature-line"></div>
+    </div>
+
+    <a class="scroll-link" href="#national-message" aria-label="انتقل إلى رسالة الوطن">
+      <span>اكتشف الرسالة</span>
+      <span class="arrow">↓</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="national-message section" id="national-message">
+
+      <div class="section-heading">
+        <span class="small-flag" aria-hidden="true">🇸🇦</span>
+        <h2>وطني الحبيب، المملكة العربية السعودية</h2>
+      </div>
+
+      <div class="message-copy">
+        <p>
+          إلى وطني الحبيب، أرض العزّ والكرامة، وموطن الفخر والانتماء،
+          أحمل لك حبًا لا تحدّه الكلمات، ووفاءً لا تغيّره الأيام.
+        </p>
+
+        <p>
+          أحب وطني لأن فيه هويتي وجذوري وذكرياتي، وأؤمن بأن الدفاع عنه
+          مسؤولية تتجاوز الكلمات، وتظهر في الوعي والعمل الصادق والتكاتف
+          لحماية أمنه واستقراره.
+        </p>
+
+        <p>
+          وفي عصر التقنية، أؤمن بأن الأمن السيبراني أحد ميادين حماية الوطن،
+          من خلال نشر الوعي الرقمي، وحماية البيانات، والتصدي للشائعات
+          والتضليل، وتسخير التقنية لخدمة المملكة وصون مكتسباتها.
+        </p>
+
+        <p>
+          سيبقى حب الوطن مسؤولية ووفاءً وعملًا، وسأظل أعتز بانتمائي إليه،
+          وأسعى لأن أكون جزءًا من مستقبله المشرق.
+        </p>
+
+        <p class="prayer">
+          اللهم احفظ المملكة العربية السعودية، وأدم عليها أمنها وأمانها
+          وعزّها واستقرارها، واحفظ قيادتها وشعبها.
+        </p>
+
+        <p class="closing">
+          دام عزّك يا وطن، ودامت رايتك خفّاقة بالمجد 🇸🇦
+        </p>
+
+        <p class="author">رغد محمد</p>
+      </div>
+    </section>
+
+    <section class="visitor-section section" id="visitor-messages">
+      <div class="section-heading centered">
+        <span class="section-number">01</span>
+        <h2>رسالة من القلب</h2>
+      </div>
+
+      <p class="section-description">
+        عبّر عن حبك للوطن بكلماتك.
+      </p>
+
+      <form id="message-form" class="message-form">
+        <label for="display-name">
+          الاسم <span>(اختياري)</span>
+        </label>
+
+        <input
+          id="display-name"
+          name="display-name"
+          type="text"
+          maxlength="40"
+          placeholder="اكتب اسمك"
+          autocomplete="nickname"
+        >
+
+        <label for="visitor-message">رسالتك للوطن</label>
+
+        <textarea
+          id="visitor-message"
+          name="visitor-message"
+          minlength="5"
+          maxlength="500"
+          rows="4"
+          placeholder="اكتب كلماتك عن حب الوطن..."
+          required
+        ></textarea>
+
+        <button id="submit-button" type="submit">
+          إرسال الرسالة
+        </button>
+
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="messages-heading">
+        <h3>رسائل الاعتزاز بالوطن</h3>
+        <span class="messages-line"></span>
+      </div>
+
+      <div id="messages-list" class="messages-list" aria-live="polite">
+        <p class="loading-message">جارٍ تحميل الرسائل...</p>
+      </div>
+    </section>
+
+    <section class="cyber-section section" id="cybersecurity">
+      <div class="cyber-symbol" aria-hidden="true">⌁</div>
+
+      <p class="eyebrow">وعي رقمي · مسؤولية وطنية</p>
+
+      <h2>الحماية السيبرانية</h2>
+
+      <p>
+        وعيٌ رقمي يحمي البيانات، ويسهم في حماية الوطن وصون مكتسباته.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span>SAUDI ARABIA</span>
+    <span class="footer-divider">|</span>
+    <span>RAGHAD © 2026</span>
+  </footer>
+</body>
+</html>
+ 
